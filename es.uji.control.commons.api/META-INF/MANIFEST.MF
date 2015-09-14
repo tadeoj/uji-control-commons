@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Api Plug-in
+Bundle-SymbolicName: es.uji.control.commons.api
+Bundle-Version: 1.0.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: es.uji.control.controller.core.service;version="1.0.0",
+ es.uji.control.controller.core.util;version="1.0.0",
+ es.uji.control.controller.mifare;version="1.0.0",
+ es.uji.control.controller.mifare.tools;version="1.0.0"
+Export-Package: es.uji.control.commons.api;version="1.0.0"

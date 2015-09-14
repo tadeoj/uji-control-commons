@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DiskCache
+Bundle-SymbolicName: es.uji.control.commons.diskcache
+Bundle-Version: 1.0.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Service-Component: OSGI-INF/DiskCacheComponent.xml
+Import-Package: org.osgi.framework,
+ org.slf4j
+Export-Package: es.uji.control.commons.diskcache

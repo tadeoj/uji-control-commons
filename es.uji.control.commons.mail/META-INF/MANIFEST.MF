@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Mail
+Bundle-SymbolicName: es.uji.control.commons.mail
+Bundle-Version: 1.0.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.osgi.framework
+Service-Component: OSGI-INF/MailComponent.xml
+Require-Bundle: slf4j.api;bundle-version="1.7.7",
+ javax.mail;bundle-version="1.4.0",
+ ch.qos.logback.classic;bundle-version="1.1.2",
+ ch.qos.logback.core;bundle-version="1.1.2",
+ javax.activation;bundle-version="1.1.0"
+Export-Package: es.uji.control.commons.mail

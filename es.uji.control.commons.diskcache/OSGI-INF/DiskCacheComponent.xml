@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="startup" deactivate="shutdown" enabled="true" immediate="false" name="es.uji.control.commons.diskcache">
+   <implementation class="es.uji.control.commons.diskcache.internal.Component"/>
+   <service>
+      <provide interface="es.uji.control.commons.diskcache.IDiskCache"/>
+   </service>
+</scr:component>
