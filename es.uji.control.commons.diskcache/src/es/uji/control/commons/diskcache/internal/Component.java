@@ -39,7 +39,7 @@ public class Component implements IDiskCache {
 	}
 	
 	private File getRootDir() throws DiskCacheException {
-		File file = new File(System.getProperty("user.home") + "\\Universitat Jaume I\\");
+		File file = new File(System.getProperty("user.home"));
 		if (!file.exists()) {
 			file.mkdirs();
 		}

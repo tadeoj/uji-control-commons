@@ -8,3 +8,4 @@ Service-Component: OSGI-INF/DiskCacheComponent.xml
 Import-Package: org.osgi.framework,
  org.slf4j
 Export-Package: es.uji.control.commons.diskcache
+Bundle-ActivationPolicy: lazy

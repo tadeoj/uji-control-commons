@@ -7,7 +7,7 @@
     https://joinup.ec.europa.eu/community/eupl/og_page/european-union-public-licence-eupl-v11
  -->
 
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="startup" deactivate="shutdown" enabled="true" immediate="false" name="es.uji.control.commons.diskcache">
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="startup" deactivate="shutdown" enabled="true" immediate="true" name="es.uji.control.commons.diskcache">
    <implementation class="es.uji.control.commons.diskcache.internal.Component"/>
    <service>
       <provide interface="es.uji.control.commons.diskcache.IDiskCache"/>
