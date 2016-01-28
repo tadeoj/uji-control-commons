@@ -10,6 +10,7 @@ package es.uji.control.commons.diskcache.internal;
 import java.io.File;
 import java.util.Date;
 
+import org.eclipse.core.runtime.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,7 +21,8 @@ import es.uji.control.commons.diskcache.IDiskCache;
 public class Component implements IDiskCache {
 	
 	static final Logger logger = LoggerFactory.getLogger(Component.class);
-
+	static final String CACHE_DIR = Platform.getInstanceLocation().getURL().getFile();
+	
 	static private final int LEVELS = 3;
 	static private final int DIGITS = 2;
 	
@@ -39,7 +41,7 @@ public class Component implements IDiskCache {
 	}
 	
 	private File getRootDir() throws DiskCacheException {
-		File file = new File(System.getProperty("user.home"));
+		File file = new File(CACHE_DIR);
 		if (!file.exists()) {
 			file.mkdirs();
 		}
